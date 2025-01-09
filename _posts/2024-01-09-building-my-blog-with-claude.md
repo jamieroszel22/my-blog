@@ -36,4 +36,4 @@ Next Steps:
 
 Stay tuned as I continue to develop both this blog and my skills in the ever-evolving tech landscape. This is just the beginning of documenting my journey to stay current with technology while maintaining that crucial human element in the loop.
 
-Feel free to follow along or reach out if you're on a similar journey!
+Feel free to follow along or reach out if you're on a similar jou
