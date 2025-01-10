@@ -3,25 +3,8 @@
 
 @import "minima";
 
-// Your custom styles
-$brand-color:      #2a7ae2;
+// Your custom styles here
+$brand-color: #2a7ae2;
 $background-color: #fdfdfd;
-$text-color:       #111111;
-$grey-color:       #828282;
-
-// Override theme defaults
-body {
-  background-color: $background-color;
-  color: $text-color;
-}
-
-.site-header {
-  border-top: 5px solid $brand-color;
-}
-
-a {
-  color: $brand-color;
-  &:hover {
-    color: darken($brand-color, 15%);
-  }
-}
+$text-color: #111111;
+$grey-color: #828282;
