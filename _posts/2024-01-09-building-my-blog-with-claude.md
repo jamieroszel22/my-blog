@@ -7,6 +7,8 @@ categories: tech
 
 Today marks the beginning of "A Human in the Loop" - my new blog about exploring technology and creative development. I thought it fitting that my first post should detail how I built this blog, especially since I used AI (specifically Claude) to help me through the process.
 
+![Creating a blog with Claude]({{ site.baseurl }}/assets/images/posts/create_blog/create_with_claude.png)
+
 Here's how we did it:
 
 1. Set up the development environment on my MacBook:
@@ -29,6 +31,7 @@ Throughout this process, Claude guided me step by step, troubleshooting issues a
 What I found particularly helpful about using Claude was its ability to explain not just what to do, but why we were doing it. This helped me understand the structure of Jekyll blogs better, rather than just blindly following commands.
 
 Next Steps:
+
 - Fine-tune the design
 - Add more content sections
 - Set up categories and tags
