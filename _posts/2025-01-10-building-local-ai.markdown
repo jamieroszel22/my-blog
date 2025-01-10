@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Setting Up My Personal AI Writing Assistant: A Local LLM Journey"
-date:   2025-01-10 16:48:55 -0500
+date:   2025-01-10 12:48:55 -0500
 categories: ai tutorial
 ---
 In an era where AI assistance has become increasingly valuable for content creation and editing, I recently embarked on setting up my own local AI infrastructure. By running language models directly on my hardware, I've created a personalized writing assistant and copy editor that's both private and accessible throughout my home network.
