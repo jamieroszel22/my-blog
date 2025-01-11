@@ -25,6 +25,8 @@ ollama pull phi
 
 The download sizes are pretty substantial - around 4GB for Llama2 and 2.7GB for Phi-4, so patience and storage are necessary. This is why I installed 6 total terabytes of storage on my pc!
 
+For more information, see the <a href="https://github.com/ollama/ollama/tree/main/docs" target="_blank" rel="noopener noreferrer">Ollama docs</a>.
+
 ### OpenWebUI Integration
 
 Installing <a href="https://openwebui.com/" target="_blank" rel="noopener noreferrer">Open WebUI</a> required a few more steps:
@@ -34,7 +36,7 @@ docker pull ghcr.io/open-webui/open-webui:main
 docker run -d -p 3000:8080 --name open-webui -v open-webui:/app/backend/data ghcr.io/open-webui/open-webui:main
 ```
 
-After installation, connecting OpenWebUI to Ollama just required pointing it to the local Ollama API endpoint (typically `http://localhost:11434`).
+After installation, connecting OpenWebUI to Ollama just required pointing it to the local Ollama API endpoint (typically `http://localhost:11434`). For more information, check out the <a href="https://docs.openwebui.com/" target="_blank" rel="noopener noreferrer">Open WebUI docs</a>.
 
 ## Model Performance Insights
 
