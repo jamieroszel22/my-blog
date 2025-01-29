@@ -1,158 +1,108 @@
 ---
 layout: post
-title: "Running OpenWebUI with Podman: A Corporate-Friendly LLM Setup"
-date: 2025-01-17 12:00:00 -0500
+title: "Unleashing AI Power at Home: Ollama, Open WebUI, and DeepSeek-R1"
+date: 2025-01-29 12:00:00 -0500
 categories: ai tutorial
 ---
 
-While setting up local LLMs has become increasingly popular, many of us face restrictions on corporate laptops that prevent using Docker. Here's how I successfully set up OpenWebUI using Podman on my IBM-issued MacBook, creating a secure and IT-compliant local AI environment.
+I don't know anyone who isn't talking about [DeepSeek](https://www.deepseek.com/) right now. If you'd like to try it for yourself, then you can use the app - it's overtaken ChatGPT to become the #1 free app in the App Stores. But why not run it locally, on your own system?
+This guide will walk you through setting up two essential components: [Ollama](https://ollama.com/) and [Open WebUI](https://openwebui.com/), introduce the DeepSeek project, and explore the benefits of running AI locally.
 
-## Why Podman?
+## Installing Ollama on Your System
 
-Podman is a daemonless container engine that's often allowed in corporate environments where Docker isn't. It's:
-- Compatible with Docker commands and images
-- Runs in userspace without requiring root privileges
-- Compliant with many corporate security policies
-- Officially supported by Red Hat and IBM (my employer)
+Ollama makes it easy for users to run large language models (LLMs) like DeepSeek locally. To install it:
 
-## Understanding the Daemon Difference
-To understand why Podman is preferred in corporate environments, it's important to understand how it differs from Docker's architecture. Docker relies on a "root daemon" (dockerd), which is a persistent background process that:
-
-Runs continuously with root/administrative privileges
-Manages all Docker containers, images, and networking
-Must be running at all times for Docker to work
-
-This daemon approach presents several concerns in corporate environments:
-
-Security Risk: A persistent process with root privileges could potentially be exploited
-Administrative Overhead: Requires root/admin access to install and configure
-IT Policy Conflicts: Many corporate policies explicitly prohibit running persistent root-level services
-
-Podman's daemonless approach eliminates these concerns by:
-
-Running containers without any persistent background process
-Operating without requiring root privileges
-Running each container directly under your user account
-Starting and stopping containers without needing a central management service
-
-Think of it this way: Docker is like having a privileged butler (the daemon) who must be present and actively managing everything, while Podman is more like having direct access to do things yourself, with regular user permissions. This architectural difference makes Podman a more secure and IT-friendly choice for corporate environments.
-
-## Installation Steps
-
-### 1. Installing Ollama
-
-First, you'll need Ollama installed. On macOS, this is straightforward:
-1. Download from [ollama.ai](https://ollama.ai)
-2. Drag to Applications
-3. Run Ollama from Applications folder
-
-### 2. Setting Up Podman
-
-Installing Podman on macOS using Homebrew:
+1. **Visit the [Ollama](https://ollama.com/) website**.
+2. **Download Ollama**: Follow the instructions provided on their website to download and install the application.
+3. **Verify Installation**: Open a terminal or command prompt and type 
 
 ```bash
-# Install Podman
-brew install podman
-
-# Initialize and start Podman machine
-podman machine init
-podman machine start
+ollama --version
 ```
 
-### 3. Installing OpenWebUI
+to ensure it's installed correctly.
 
-With Podman ready, we can pull and run OpenWebUI:
+## Installing DeepSeek-R1
+
+To use the DeepSeek-R1 model, Ddownload it from [DeepSeek-R1](https://ollama.com/library/deepseek-r1) in Ollama's library.
+
+## Variety of Models Available
+
+Ollama offers a variety of models ranging from 1.5 billion to 671 billion parameters. For most systems, including modern MacBook chips, the 7 billion parameter model works well and provides a balanced performance.
+
+## Installing Open WebUI
+
+**Open WebUI** provides an intuitive interface for interacting with your LLMs. You can set it up using either traditional installation methods or by using containerization tools like [Docker](https://www.docker.com/) and [Podman](https://podman-desktop.io/).
+
+### Traditional Installation
+
+1. **Clone the Repository**: Use Git to clone the Open WebUI repository:
+
+    ```bash
+    git clone https://github.com/ollama/open-webui.git
+    ```
+
+1. **Install Dependencies** : Navigate into the cloned directory and install necessary dependencies with:
+
+    ```bash
+    cd open-webui && npm install
+    ```
+
+1. Run the Server : Start the server using:
 
 ```bash
-# Pull the latest OpenWebUI image
-podman pull ghcr.io/open-webui/open-webui:main
-
-# Run OpenWebUI
-podman run -d -p 3000:8080 --name open-webui -v open-webui:/app/backend/data ghcr.io/open-webui/open-webui:main
+npm start
 ```
 
-If you get a port conflict (like I did), you can use a different port:
+### Containerized Installation
+
+For a more streamlined setup, you can use Docker or Podman:
+
+#### Using Docker
+
+1. **Install Docker** from the [official website](https://www.docker.com/).
+1. **Pull and Run the Image**:
 
 ```bash
-# Run on port 3001 instead
-podman run -d -p 3001:8080 --name open-webui -v open-webui:/app/backend/data ghcr.io/open-webui/open-webui:main
+docker pull ollama/open-webui:latest
+docker run -d --name open-webui -p 3000:3000 ollama/open-webui:latest
 ```
 
-### 4. Connecting to Ollama
+#### Using Podman
 
-Once OpenWebUI is running:
-1. Open your browser to `http://localhost:3000` (or `3001` if you changed the port)
-2. Click on "Settings"
-3. Set the Ollama API endpoint to `http://localhost:11434`
-
-## Useful Podman Commands
-
-Here are some helpful commands for managing your OpenWebUI container:
-
+1. **Install Podman** from the [official website]((https://podman-desktop.io/)).
+1. **Pull and Run the Image**:
 ```bash
-# List running containers
-podman ps
-
-# Stop the OpenWebUI container
-podman stop open-webui
-
-# Start an existing container
-podman start open-webui
-
-# Remove the container
-podman rm open-webui
-
-# View container logs
-podman logs open-webui
+podman pull ollama/open-webui:latest
+podman run -d --name open-webui -p 3000:3000 ollama/open-webui:latest
 ```
 
-## Troubleshooting
+Access Open WebUI through your web browser at `http://localhost:3000`.
 
-Common issues and solutions:
+## What is DeepSeek?
 
-### Port Conflicts
-If you see a 500 error or can't access the UI, check for port conflicts:
-```bash
-lsof -i :3000
-```
-Use a different port number if needed, as shown in the installation steps above.
+DeepSeek is a cutting-edge project aimed at enhancing LLM capabilities. The DeepSeek-R1 model represents advancements in AI, focusing on robustness and scalability. The best exlainer I've seen is provided on YouTube by [Dave's Garage](https://youtu.be/r3TpcHebtxM?si=LoREJDPKeyFtQGyy). In short, it punches above its weight compared to models that cost 100x as much, it's cheap and efficient, and it's open source.
 
-### Podman Machine Issues
-If Podman isn't responding:
-```bash
-# Check machine status
-podman machine list
+### My Favorite Part
 
-# Restart the machine
-podman machine stop
-podman machine start
-```
+DeepSeek is a reasoning model, which means that it thinks before it answers. This is actually my favorite part of using DeepSeek. Here's an example:
 
-### Volume Persistence
-If your settings aren't persisting between restarts, verify the volume mount:
-```bash
-podman volume ls
-podman volume inspect open-webui
-```
+First, I gave it a prompt:
 
-## Corporate Network Considerations
+![Deepseek prompt](/assets/images/posts/create_blog/deepseek/deepseek1.png)
 
-When running on a corporate network:
-- Ensure you're not blocked by corporate firewalls
-- Consider using VPN if accessing from outside the office
-- Check with IT policies regarding local AI model usage
-- Keep your Podman and OpenWebUI installations updated
+After that, it thinks:
 
-## Benefits Over Docker Setup
+![Deepseek prompt](/assets/images/posts/create_blog/deepseek/deepseek2.png)
 
-Using Podman in a corporate environment offers several advantages:
-- No root daemon running in the background
-- Better security isolation
-- Compatibility with corporate security policies
-- Similar command syntax to Docker (easy transition)
+Then, only after thinking about it, it gives me its answer:
 
-## Looking Forward
+![Deepseek prompt](/assets/images/posts/create_blog/deepseek/deepseek3.png)
 
-This setup has allowed me to run local LLMs on my corporate laptop while staying compliant with IT policies. As more organizations adopt AI tools, having a secure, corporate-friendly way to run local models becomes increasingly important.
+I really enjoy this aspect, as I now know *how* it arrived at its answer, which then lets me know if I need to re-prompt.
 
-The combination of Ollama, Podman, and OpenWebUI provides a robust foundation for local AI development that works well within corporate constraints. Whether you're writing code, drafting documents, or exploring AI capabilities, this setup offers a practical solution that respects corporate IT policies while delivering the full power of local LLMs.
+## Benefits of Running AI Locally
+
+By installing Ollama and Open WebUI, you gain transparency into the operations of models like DeepSeek-R1, allowing for customized experiments and privacy-focused applications.
+
+Explore the exciting potential of local AI with ease and flexibility. Happy experimenting!
