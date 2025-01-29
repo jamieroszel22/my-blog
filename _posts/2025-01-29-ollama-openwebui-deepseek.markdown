@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Unleashing AI Power at Home: Ollama, Open WebUI, and DeepSeek-R1"
-date: 2025-01-29 12:00:00 -0500
+date: 2025-01-29 9:00:00 -0500
 categories: ai tutorial
 ---
 
