@@ -90,15 +90,40 @@ DeepSeek is a reasoning model, which means that it thinks before it answers. Thi
 
 First, I gave it a prompt:
 
-![Deepseek prompt](/assets/images/posts/create_blog/deepseek/deepseek1.png)
+```text
+Tell me about the age of the earth.
+```
 
 After that, it thinks:
 
-![Deepseek prompt](/assets/images/posts/create_blog/deepseek/deepseek2.png)
+```text
+Okay, so I need to figure out how old the Earth is. I remember hearing something about it being around 4.5 billion years old, but I'm not exactly sure where that number comes from or what it means. Let's start by thinking about what I know.
+
+First off, the Earth was formed when a bunch of materials collided and fused together, right? That process is called planetary formation. But how do we determine its age? I think it has something to do with radioactive isotopes because they decay over time at a constant rate. So, if we can find out which isotopes were present when the Earth was formed and compare them now, we might be able to calculate its age.
+
+Wait, but what isotopes are used for this? I remember something about uranium decaying into lead or something like that. If we have rocks with uranium and lead in them, maybe we can use the decay of uranium-238 to determine how old the rock is. But wait, not all rocks are the same age, right? Some are older than others because they might have been formed later when new materials were added.
+
+Oh, I think there's something called zirconium minerals that form in lava flows and can be used as a reference for the Earth's age. Those minerals supposedly crystallize quickly so they don't get contaminated with newer materials from the mantle. So maybe the oldest zirconium found on Earth is a good indicator of how old the planet is.
+
+But wait, I'm not sure if zirconium's age is exactly 4.5 billion years or just used as an anchor point. Maybe it's more like the oldest zircon found is around that age. Also, what about other isotopes? Like rubidium-strontium dating or something else?
+```
 
 Then, only after thinking about it, it gives me its answer:
 
-![Deepseek prompt](/assets/images/posts/create_blog/deepseek/deepseek3.png)
+```text
+The Earth's age is determined through various scientific methods primarily involving radioactive isotopes found in minerals such as zircon. Here's a structured summary of the process and conclusion:
+
+Planetary Formation : The Earth formed from a collision and fusion of celestial materials, a process known as planetary formation.
+Radioactive Isotopes : The decay of radioactive isotopes over time is used to determine age. For example:
+Uranium-238 decays into lead.
+Rubidium-strontium dating and other methods are also employed.
+Reference Minerals : Zircon minerals, found in lava flows, are considered reliable for Earth's age determination as they crystallize quickly and avoid contamination from the mantle.
+Independent Methods : Various methods like uranium-lead dating and Oklo nuclear plant (a 2 billion year-old zircon) provide cross-checks, ensuring consistency around a similar age.
+Age Determination : The oldest zircon found on Earth indicates the planet's age to be approximately 4.5 billion years. Independent isotopic analyses corroborate this figure with minor variations but consistent within a range.
+Considerations : Variations between methods are accounted for by considering planetary evolution and mixing of materials over time.
+Conclusion : The scientific consensus, supported by multiple methods, places the Earth's age at around 4.5 billion years old, with some methods slightly differing in specifics but all converging on this figure.
+This conclusion is derived from a thorough examination of isotopic decay processes and their application to dating minerals within ancient geological formations.
+```
 
 I really enjoy this aspect, as I now know *how* it arrived at its answer, which then lets me know if I need to re-prompt.
 
