@@ -16,9 +16,9 @@ Ollama makes it easy for users to run large language models (LLMs) like DeepSeek
 2. **Download Ollama**: Follow the instructions provided on their website to download and install the application.
 3. **Verify Installation**: Open a terminal or command prompt and type 
 
-```bash
-ollama --version
-```
+    ```bash
+    ollama --version
+    ```
 
 to ensure it's installed correctly.
 
@@ -50,9 +50,9 @@ Ollama offers a variety of models ranging from 1.5 billion to 671 billion parame
 
 1. Run the Server : Start the server using:
 
-```bash
-npm start
-```
+    ```bash
+    npm start
+    ```
 
 ### Containerized Installation
 
@@ -63,19 +63,20 @@ For a more streamlined setup, you can use Docker or Podman:
 1. **Install Docker** from the [official website](https://www.docker.com/).
 1. **Pull and Run the Image**:
 
-```bash
-docker pull ollama/open-webui:latest
-docker run -d --name open-webui -p 3000:3000 ollama/open-webui:latest
-```
+    ```bash
+    docker pull ollama/open-webui:latest
+    docker run -d --name open-webui -p 3000:3000 ollama/open-webui:latest
+    ```
 
 #### Using Podman
 
 1. **Install Podman** from the [official website]((https://podman-desktop.io/)).
 1. **Pull and Run the Image**:
-```bash
-podman pull ollama/open-webui:latest
-podman run -d --name open-webui -p 3000:3000 ollama/open-webui:latest
-```
+
+    ```bash
+    podman pull ollama/open-webui:latest
+    podman run -d --name open-webui -p 3000:3000 ollama/open-webui:latest
+    ```
 
 Access Open WebUI through your web browser at `http://localhost:3000`.
 
