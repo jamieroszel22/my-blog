@@ -60,23 +60,25 @@ For a more streamlined setup, you can use Docker or Podman:
 
 #### Using Docker
 
-1. **Install Docker** from the [official website](https://www.docker.com/).
-1. **Pull and Run the Image**:
+Install Docker from the official [website](https://www.docker.com/).
+Pull and Run the Image:
 
-    ```bash
-    docker pull ollama/open-webui:latest
-    docker run -d --name open-webui -p 3000:3000 ollama/open-webui:latest
-    ```
+ ```bash
+ docker pull ollama/open-webui:latest
+ docker run -d --name open-webui --add-host host.docker.internal:host-gateway -p 3000:3000 ollama/open-webui:latest
+ ```
 
 #### Using Podman
 
-1. **Install Podman** from the [official website]((https://podman-desktop.io/)).
-1. **Pull and Run the Image**:
+Install Podman from the official [website](https://podman-desktop.io/).
+Pull and Run the Image:
 
-    ```bash
-    podman pull ollama/open-webui:latest
-    podman run -d --name open-webui -p 3000:3000 ollama/open-webui:latest
-    ```
+ ```bash
+ podman pull ollama/open-webui:latest
+ podman run -d --name open-webui --network slirp4netns:allow_host_loopback=true -p 3000:3000 ollama/open-webui:latest
+ ```
+
+*Note*: The networking flags (`--add-host` for Docker and `--network` for Podman) are essential as they allow the Open WebUI container to communicate with Ollama running on your host system (port `11434`). Without these flags, the container won't be able to connect to Ollama.
 
 Access Open WebUI through your web browser at `http://localhost:3000`.
 
