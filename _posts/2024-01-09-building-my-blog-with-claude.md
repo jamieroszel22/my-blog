@@ -2,7 +2,7 @@
 layout: post
 title: "Building My Blog with Jekyll and Claude"
 date: 2024-01-09
-categories: tech
+categories: Technology
 ---
 
 Today marks the beginning of "A Human in the Loop" - my new blog about exploring technology and creative development. I thought it fitting that my first post should detail how I built this blog, especially since I used AI (specifically Claude) to help me through the process.

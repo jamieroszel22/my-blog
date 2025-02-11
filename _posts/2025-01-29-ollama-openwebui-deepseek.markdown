@@ -2,7 +2,7 @@
 layout: post
 title: "Unleashing AI Power at Home: Ollama, Open WebUI, and DeepSeek-R1"
 date: 2025-01-29 9:00:00 -0500
-categories: ai tutorial
+categories: AI tutorial
 ---
 
 I don't know anyone who isn't talking about [DeepSeek](https://www.deepseek.com/) right now. If you'd like to try it for yourself, then you can use the app - it's overtaken ChatGPT to become the #1 free app in the App Stores. But why not run it locally, on your own system?

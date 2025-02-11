@@ -2,7 +2,7 @@
 layout: post
 title:  "The Productivity Dilemma: Why More Speed Isn't Always the Answer"
 date:   2025-01-11 16:00:00 -0500
-categories: ai
+categories: AI
 ---
 
 Lately, I've been watching some videos from <a href="https://www.youtube.com/@matthew_berman" target="_blank" rel="noopener noreferrer">Matthew Berman</a> and I've realy enjoyed them. They're great deep dives into various AI topics.
