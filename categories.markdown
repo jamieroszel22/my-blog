@@ -4,7 +4,6 @@ title: Categories
 permalink: /categories/
 ---
 
-{% raw %}
 {% for category in site.categories %}
   <h3>{{ category[0] }}</h3>
   <ul>
@@ -16,4 +15,3 @@ permalink: /categories/
     {% endfor %}
   </ul>
 {% endfor %}
-{% endraw %}
