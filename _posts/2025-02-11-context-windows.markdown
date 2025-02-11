@@ -2,7 +2,7 @@
 layout: post
 title: "Unveiling the Magic: How Large Language Models Handle Conversations"
 date: 2025-02-11 9:00:00 -0500
-categories: ai info
+categories: ai
 ---
 
 When I first started interacting with large language models (LLMs) like those powering <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a> and <a href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">Gemini</a>, I was struck by how seamlessly they maintained context in conversations. It felt as if the model remembered our entire exchange, allowing for a natural back-and-forth dialogue. However, this perception is an illusion—one that masks a fascinating mechanism behind the scenes.
