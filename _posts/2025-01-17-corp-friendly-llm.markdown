@@ -2,7 +2,7 @@
 layout: post
 title: "Running OpenWebUI with Podman: A Corporate-Friendly LLM Setup"
 date: 2025-01-17 12:00:00 -0500
-categories: AI tutorial
+categories: Tutorial
 ---
 
 While setting up local LLMs has become increasingly popular, many of us face restrictions on corporate laptops that prevent using Docker. Here's how I successfully set up OpenWebUI using Podman on my IBM-issued MacBook, creating a secure and IT-compliant local AI environment.
