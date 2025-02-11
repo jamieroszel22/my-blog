@@ -19,6 +19,10 @@ plugins:
 show_excerpts: true # shows post excerpts on home page
 minima:
   date_format: "%b %-d, %Y"
+  social_links:
+    - title: LinkedIn Profile
+      icon: linkedin
+      url: "https://www.linkedin.com/in/jamie-roszel-59a2a395/" # Replace with your actual LinkedIn profile URL
 
 # Define header pages
 header_pages:
