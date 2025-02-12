@@ -73,4 +73,4 @@ Understanding how LLMs handle conversations is crucial for maximizing their effe
 - Long conversations can be inefficient due to increased latency and token limits.
 - Use summarization techniques to retain essential information and start fresh chats when needed.
 - By applying these insights, we can enhance our productivity and make the most of LLM-powered tools in our daily tasks. Whether you're conducting research, drafting reports, or brainstorming ideas, a clear understanding of how LLMs work will undoubtedly improve your workflow.
-- If long conversations are necessary, <a href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">Gemini</a> is the clear winner, with a context length of up to 1 million tokens with Gemini 1.5 Pro. No other service even comes close.
+- If long conversations are necessary, <a href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">Gemini</a> is the clear winner, with a context length of up to 2 million tokens with Gemini 1.5 Pro. No other service even comes close.
