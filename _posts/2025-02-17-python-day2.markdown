@@ -3,6 +3,7 @@ layout: post
 title: "Day 2 Deep Dive: Enhancing Our To-Do List with While Loops, Indentation, and Methods"
 date: 2025-02-17 9:00:00 -0500
 categories: Python
+comments: true
 ---
 
 Building on the foundations we laid down on Day 1, today I dove deeper into Python by enhancing our simple to-do list application. The goal was to make it more interactive and dynamic. This led me to explore while loops, indentation, and methods—crucial concepts in Python programming.

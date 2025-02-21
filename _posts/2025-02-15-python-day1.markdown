@@ -3,6 +3,7 @@ layout: post
 title: "Day 1 Wrap-Up: Learning Python Basics with a Simple To-Do List"
 date: 2025-02-15 9:00:00 -0500
 categories: Python
+comments: true
 ---
 
 As I embark on my journey to learn Python, I find myself both excited and challenged by the language's simplicity and power. Day 1 is a classic beginner project: creating a simple to-do list application. This exercise helped me grasp some fundamental concepts in Python programming.
