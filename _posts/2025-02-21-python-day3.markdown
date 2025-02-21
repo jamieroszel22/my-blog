@@ -3,6 +3,7 @@ layout: post
 title: "Day 3 Mastery: Enhancing Our To-Do List with Match-Case, Break Statements, and For-Loops"
 date: 2025-02-21 9:00:00 -0500
 categories: Python
+comments: true
 ---
 
 Day 3 brought new challenges and insights. Today, I enhanced my to-do list app by incorporating match-case statements, break statements, and for-loops. These additions not only made the application more interactive but also introduced me to powerful control structures in Python.

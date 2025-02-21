@@ -10,6 +10,9 @@ url: "https://jamieroszel22.github.io" # your GitHub Pages URL
 # Social links
 github_username: jamieroszel22
 
+disqus:
+  shortname: humanintheloop
+
 # Build settings
 theme: minima
 plugins:
