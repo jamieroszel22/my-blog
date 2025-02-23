@@ -59,6 +59,8 @@ This template does several important things:
 
 I created an `_layouts` folder with `post.html` containing:
 
+{% raw %}
+
 ```html
 ---
 layout: default
@@ -87,6 +89,8 @@ layout: default
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 ```
+
+{% endraw %}
 
 This layout template:
 
