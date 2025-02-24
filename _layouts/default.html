@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {%- feed_meta -%}
+  
+  <style>
+    .site-header {
+      border-top: 5px solid #424242;
+      border-bottom: 1px solid #e8e8e8;
+      min-height: 55.95px;
+      position: relative;
+    }
+    
+    .category-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 30px 0;
+    }
+    
+    .category-button {
+      padding: 12px 25px;
+      border-radius: 8px;
+      color: white;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center;
+      min-width: 120px;
+    }
+    
+    .python { background-color: #3572A5; }
+    .ai { background-color: #7b68ee; }
+    .technology { background-color: #2196F3; }
+    .tutorial { background-color: #e57373; }
+    
+    .topic-heading {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    .post-categories {
+      margin: 10px 0;
+    }
+    
+    .category-tag {
+      display: inline-block;
+      background-color: #f0f0f0;
+      color: #555;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      margin-right: 8px;
+      margin-bottom: 5px;
+    }
+    
+    .site-footer {
+      border-top: 1px solid #e8e8e8;
+      padding: 30px 0;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    
+    .footer-section {
+      flex: 1;
+      min-width: 200px;
+    }
+    
+    .footer-section h3 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+    
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+    
+    .footer-nav-button {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #2a7ae2;
+      color: white !important;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .footer-nav-button:hover {
+      background-color: #1756a9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrapper">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </div>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer h-card">
+    <div class="wrapper">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <div>
+            <a href="/portfolio" class="footer-nav-button">
+              <span>📁 Portfolio</span>
+            </a>
+            <a href="/about" class="footer-nav-button">
+              <span>👤 About</span>
+            </a>
+          </div>
+          <ul>
+            <li><a href="/archive">All Posts</a></li>
+            <li><a href="/feed.xml">RSS Feed</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="/categories/python">Python</a></li>
+            <li><a href="/categories/ai">AI</a></li>
+            <li><a href="/categories/technology">Technology</a></li>
+            <li><a href="/categories/tutorial">Tutorial</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
+            {% if site.social_links %}
+              {% for link in site.social_links %}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+              {% endfor %}
+            {% endif %}
+            <li><a href="mailto:{{ site.email }}">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright" style="margin-top: 20px; text-align: center; font-size: 0.9em; color: #777;">
+        © {{ site.time | date: '%Y' }} {{ site.title | escape }} | Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/jekyll/minima">Minima</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
