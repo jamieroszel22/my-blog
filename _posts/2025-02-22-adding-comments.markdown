@@ -2,7 +2,7 @@
 layout: post
 title: "Adding Disqus Comments to My GitHub Pages Blog"
 date: 2025-02-22 13:00:00 -0500
-categories: Technology
+categories: [Technology, Tutorial]
 comments: true
 ---
 
