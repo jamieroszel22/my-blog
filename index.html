@@ -1,0 +1,126 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="home-intro">
+    <h1>A Human in the Loop</h1>
+    <p>{{ site.description }}</p>
+  </div>
+
+  <div class="featured-categories">
+    <h2>Explore Topics</h2>
+    <div class="category-buttons">
+      <a href="{{ site.baseurl }}/categories#python" class="category-button python">Python</a>
+      <a href="{{ site.baseurl }}/categories#ai" class="category-button ai">AI</a>
+      <a href="{{ site.baseurl }}/categories#technology" class="category-button technology">Technology</a>
+      <a href="{{ site.baseurl }}/categories#tutorial" class="category-button tutorial">Tutorial</a>
+    </div>
+  </div>
+
+  <div class="latest-posts">
+    <h2 class="post-list-heading">Latest Posts</h2>
+    <ul class="post-list">
+      {% for post in site.posts limit:3 %}
+      <li>
+        <span class="post-meta">{{ post.date | date: site.minima.date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        {% if post.categories.size > 0 %}
+        <div class="post-categories">
+          {% for category in post.categories %}
+            <span class="category-tag">{{ category }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {{ post.excerpt }}
+      </li>
+      {% endfor %}
+    </ul>
+    
+    <div class="view-all">
+      <a href="{{ site.baseurl }}/categories" class="view-all-button">View All Categories →</a>
+    </div>
+  </div>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+</div>
+
+<style>
+.home-intro {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.featured-categories {
+  margin: 2rem 0;
+}
+
+.category-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.category-button {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.category-button:hover {
+  transform: translateY(-2px);
+}
+
+.category-button.python { background: #3776ab; color: white; }
+.category-button.ai { background: #6c5ce7; color: white; }
+.category-button.technology { background: #2a7ae2; color: white; }
+.category-button.tutorial { background: #e17055; color: white; }
+
+.post-categories {
+  margin: 0.5rem 0;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+  background: #f0f0f0;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.view-all {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.view-all-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #2a7ae2;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.view-all-button:hover {
+  background: #1756a9;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .category-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
