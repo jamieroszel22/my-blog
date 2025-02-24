@@ -4,8 +4,16 @@ layout: default
 
 <div class="home">
   <div class="home-intro">
-    <h1>A Human in the Loop</h1>
     <p>{{ site.description }}</p>
+    
+    <div class="site-links">
+      <a href="https://jamieroszel.com" target="_blank" rel="noopener noreferrer" class="site-link">
+        <span class="link-icon">🔗</span> Portfolio
+      </a>
+      <a href="{{ site.baseurl }}/about/" class="site-link">
+        <span class="link-icon">👤</span> About
+      </a>
+    </div>
   </div>
 
   <div class="featured-categories">
@@ -50,8 +58,39 @@ layout: default
 <style>
 .home-intro {
   text-align: center;
-  padding: 2rem 0;
-  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.site-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.site-link {
+  padding: 0.5rem 1.2rem;
+  background: #2a7ae2;
+  color: white !important;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.link-icon {
+  margin-right: 0.5rem;
+}
+
+.site-link:hover {
+  background: #1756a9;
+  transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .featured-categories {
@@ -121,6 +160,12 @@ layout: default
 @media (max-width: 768px) {
   .category-buttons {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .site-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
 }
 </style>
