@@ -32,10 +32,6 @@ header_pages:
   - about.md
   - categories.md
 
-navbar_links:
-  - title: Portfolio
-    url: https://jamieroszel.com
-
 # SASS settings for styling
 sass:
   style: compressed

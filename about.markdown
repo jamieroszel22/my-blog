@@ -4,40 +4,30 @@ title: About
 permalink: /about/
 ---
 
-# A Human in the Loop
-
-Hi, I'm Jamie Roszel, a content developer with a passion for bridging the gap between complex technical concepts and clear, accessible documentation. With experience ranging from IBM Cloud Databases to technical education, I've dedicated my career to making technology more understandable and approachable.
+Hi, I'm Jamie Roszel, a passionate technologist and project leader at [IBM RedBooks](https://www.redbooks.ibm.com/). With a unique blend of technical expertise and leadership skills, I specialize in guiding projects that create impactful technical content while bridging complex concepts with clear, accessible documentation.
 
 ## What I Do
 
-Currently, I manage documentation for IBM Cloud Databases, where I work with everything from MongoDB to PostgreSQL, ensuring that complex database concepts are clearly explained and accessible to users. My work spans across:
+As a project leader at IBM Redbooks, I am deeply involved in shaping technical content and ensuring it aligns with IBM's strategic goals. My work spans across:
 
-- Technical documentation and API guides
-- Tutorial creation and user education
-- Content strategy and development
-- Documentation as Code implementations
+- Leading Cross-functional Teams : Coordinating resources, deadlines, and deliverables to manage complex technical projects effectively.
+- Strategic Content Development : Driving the creation of high-quality technical content that meets customer needs and supports IBM’s mission.
+- Aligning with Agile Methodologies : Ensuring alignment with IBM's best practices and project goals through effective team coordination.
+
+Additionally, I have a strong background in:
+
+- Project Management : Overseeing multiple projects to ensure timely delivery and alignment with strategic objectives.
+- Mentorship & Collaboration : Building strong partnerships within the tech community to foster growth and innovation.
+- Technical Communication : Ensuring that complex technical concepts are clearly explained and accessible to users through guided content creation processes.
 
 ## Why This Blog?
 
-"A Human in the Loop" was born from my unique position at the intersection of content development and emerging technologies. As someone who works daily with technical documentation and sees the rapid advancement of AI and machine learning tools, I'm fascinated by how we can maintain the crucial human element in our increasingly automated world.
+"A Human in the Loop" reflects my journey at the intersection of content leadership, technology strategy, and emerging trends like AI and machine learning. As someone who works daily with technical projects and sees the rapid advancement of AI tools, I am passionate about preserving the human element in our increasingly automated world.
 
 ## My Background
 
-My journey has been anything but conventional. Starting as an English teacher at Cary Academy (where I helped achieve a 98% AP test passage rate), I've evolved into a technical content developer who specializes in making complex concepts accessible. Along the way, I've picked up expertise in:
-
-- Documentation tools (GitHub, Markdown, DITA XML, FrameMaker)
-- Technical communication and API documentation
-- Project management and Agile methodologies
-- Artificial Intelligence and Machine Learning concepts
-
-## The Blog's Mission
-
-Through this blog, I aim to:
-- Share insights about staying relevant in a rapidly evolving tech landscape
-- Explore the intersection of human creativity and artificial intelligence
-- Document my journey in learning and implementing new technologies
-- Create a resource for others navigating similar paths
+My career has been marked by a transition from hands-on technical writing to leading impactful projects at IBM Redbooks. This shift has allowed me to focus on guiding teams to produce high-quality technical content while maintaining my expertise in technical communication.
 
 ## Let's Connect
 
-I'm always interested in connecting with fellow tech enthusiasts, content developers, or anyone interested in the future of human-AI collaboration. You can reach me at [jamie.s.roszel@gmail.com](mailto:jamie.s.roszel@gmail.com) or find me on [LinkedIn](https://www.linkedin.com/in/jamie-roszel-59a2a395/).
+I am always excited to connect with fellow tech enthusiasts, project leaders, or anyone interested in the future of human-driven technical content creation. Feel free to reach out on <a href="https://www.linkedin.com/in/jamie-roszel-59a2a395/" target="_blank">LinkedIn</a>.
