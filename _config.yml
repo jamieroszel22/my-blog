@@ -4,8 +4,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   "A Human in the Loop" chronicles one content developer's journey to stay ahead 
   of the curve, exploring new software projects and pushing creative boundaries 
   in a world of rapidly evolving technology.
-baseurl: "/my-blog" # required because your site is at username.github.io/my-blog
-url: "https://jamieroszel22.github.io" # your GitHub Pages URL
+baseurl: "" # should be empty when using a custom domain
+url: "https://inhumanloop.com" # your new custom domain
 
 # Social links
 github_username: jamieroszel22
