@@ -15,7 +15,7 @@ permalink: /categories/technology/
 
 <ul class="post-list">
   {% for post in site.posts %}
-    {% if post.categories contains "Technology" %}
+    {% if post.categories contains "Technology" or post.categories contains "technology" %}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>

@@ -15,7 +15,7 @@ permalink: /categories/ai/
 
 <ul class="post-list">
   {% for post in site.posts %}
-    {% if post.categories contains "AI" %}
+    {% if post.categories contains "AI" or post.categories contains "ai" %}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -40,3 +40,18 @@ permalink: /categories/ai/
     {% endif %}
   {% endfor %}
 </ul>
+
+{% comment %}
+Check if any posts were found
+{% endcomment %}
+{% assign found_posts = false %}
+{% for post in site.posts %}
+  {% if post.categories contains "AI" or post.categories contains "ai" %}
+    {% assign found_posts = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if found_posts == false %}
+  <p>No posts in this category yet.</p>
+{% endif %}
