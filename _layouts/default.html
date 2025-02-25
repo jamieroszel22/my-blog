@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
 <head>
   <meta charset="utf-8">
@@ -8,40 +8,147 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
+  
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    
+    .site-header {
+      border-top: 5px solid #424242;
+      border-bottom: 1px solid #e8e8e8;
+      min-height: 55.95px;
+      position: relative;
+    }
+    
+    .site-description {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #555;
+      margin: 30px 0;
+    }
+    
+    .topic-section {
+      margin: 40px 0;
+    }
+    
+    .topic-heading {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    .category-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 30px 0;
+    }
+    
+    .category-button {
+      padding: 12px 25px;
+      border-radius: 8px;
+      color: white !important;
+      font-weight: 500;
+      text-decoration: none !important;
+      text-align: center;
+      min-width: 120px;
+      display: inline-block;
+    }
+    
+    .category-button:hover {
+      opacity: 0.9;
+      text-decoration: none !important;
+    }
+    
+    .python { background-color: #3572A5 !important; }
+    .ai { background-color: #7b68ee !important; }
+    .technology { background-color: #2196F3 !important; }
+    .tutorial { background-color: #e57373 !important; }
+    
+    .post-categories {
+      margin: 10px 0;
+    }
+    
+    .category-tag {
+      display: inline-block;
+      background-color: #f0f0f0;
+      color: #555;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      margin-right: 8px;
+      margin-bottom: 5px;
+    }
+    
+    .site-footer {
+      border-top: 1px solid #e8e8e8;
+      padding: 30px 0;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    
+    .footer-section {
+      flex: 1;
+      min-width: 200px;
+    }
+    
+    .footer-section h3 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+    
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+    
+    .footer-nav-button {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #2a7ae2;
+      color: white !important;
+      text-decoration: none !important;
+      border-radius: 4px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .footer-nav-button:hover {
+      background-color: #1756a9;
+      text-decoration: none !important;
+    }
+    
+    .copyright {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #777;
+      text-align: center;
+    }
+    
+    /* Fix for links */
+    a.category-button:hover,
+    a.footer-nav-button:hover {
+      text-decoration: none !important;
+    }
+  </style>
 </head>
 
 <body>
-
   <header class="site-header" role="banner">
     <div class="wrapper">
-      {%- assign default_paths = site.pages | map: "path" -%}
-      {%- assign page_paths = site.header_pages | default: default_paths -%}
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
-      {%- if page_paths -%}
-        <nav class="site-nav">
-          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-          <label for="nav-trigger">
-            <span class="menu-icon">
-              <svg viewBox="0 0 18 15" width="18px" height="15px">
-                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-              </svg>
-            </span>
-          </label>
-
-          <div class="trigger">
-            {%- for path in page_paths -%}
-              {%- assign my_page = site.pages | where: "path", path | first -%}
-              {%- if my_page.title -%}
-                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-              {%- endif -%}
-            {%- endfor -%}
-          </div>
-        </nav>
-      {%- endif -%}
+      <a href="/categories" style="float: right; margin-top: 15px;">Categories</a>
     </div>
   </header>
 
@@ -53,59 +160,52 @@
 
   <footer class="site-footer h-card">
     <div class="wrapper">
-      <div class="footer-col-wrapper">
-        <div class="footer-col footer-col-1">
+      <div class="footer-content">
+        <div class="footer-section">
           <h3>Navigation</h3>
-          <ul class="footer-links">
-            <li><a href="{{ '/' | relative_url }}">Home</a></li>
-            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-            <li><a href="{{ '/portfolio/' | relative_url }}">Portfolio</a></li>
-            <li><a href="{{ '/all-posts/' | relative_url }}">All Posts</a></li>
-            <li><a href="{{ '/categories/' | relative_url }}">Categories</a></li>
+          <div>
+            <a href="/portfolio" class="footer-nav-button">
+              <span>📁 Portfolio</span>
+            </a>
+            <a href="/about" class="footer-nav-button">
+              <span>👤 About</span>
+            </a>
+          </div>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/archive">All Posts</a></li>
+            <li><a href="/feed.xml">RSS Feed</a></li>
           </ul>
         </div>
-
-        <div class="footer-col footer-col-2">
+        
+        <div class="footer-section">
           <h3>Categories</h3>
-          <ul class="footer-links">
-            <li><a href="{{ '/categories/python/' | relative_url }}">Python</a></li>
-            <li><a href="{{ '/categories/ai/' | relative_url }}">AI</a></li>
-            <li><a href="{{ '/categories/technology/' | relative_url }}">Technology</a></li>
-            <li><a href="{{ '/categories/tutorial/' | relative_url }}">Tutorial</a></li>
+          <ul>
+            <li><a href="/categories/python">Python</a></li>
+            <li><a href="/categories/ai">AI</a></li>
+            <li><a href="/categories/technology">Technology</a></li>
+            <li><a href="/categories/tutorial">Tutorial</a></li>
           </ul>
         </div>
-
-        <div class="footer-col footer-col-3">
+        
+        <div class="footer-section">
           <h3>Connect</h3>
-          <ul class="social-media-list">
-            {% if site.github_username %}
-            <li>
-              <a href="https://github.com/{{ site.github_username }}">
-                <svg class="svg-icon">
-                  <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
-                </svg>
-                <span class="username">{{ site.github_username }}</span>
-              </a>
-            </li>
-            {% endif %}
-
-            {% if site.minima.social_links %}
-              {% for link in site.minima.social_links %}
-              <li>
-                <a href="{{ link.url }}">
-                  <svg class="svg-icon">
-                    <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: link.icon | relative_url }}"></use>
-                  </svg>
-                  <span class="username">{{ link.title }}</span>
-                </a>
-              </li>
+          <ul>
+            <li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
+            {% if site.social_links %}
+              {% for link in site.social_links %}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
               {% endfor %}
             {% endif %}
+            <li><a href="mailto:{{ site.email }}">Email</a></li>
           </ul>
         </div>
+      </div>
+      
+      <div class="copyright" style="margin-top: 20px; text-align: center; font-size: 0.9em; color: #777;">
+        © {{ site.time | date: '%Y' }} {{ site.title | escape }} | Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/jekyll/minima">Minima</a>
       </div>
     </div>
   </footer>
 </body>
-
 </html>
