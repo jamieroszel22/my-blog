@@ -2,21 +2,33 @@
 layout: post
 title: "Running OpenWebUI with Podman: A Corporate-Friendly LLM Setup"
 date: 2025-01-17 12:00:00 -0500
-categories: Tutorial
+categories: [Tutorial, AI]
 comments: true
 ---
 
 While setting up local LLMs has become increasingly popular, many of us face restrictions on corporate laptops that prevent using Docker. Here's how I successfully set up OpenWebUI using Podman on my IBM-issued MacBook, creating a secure and IT-compliant local AI environment.
 
+## System Requirements
+
+Before getting started, ensure your machine meets these recommended specifications:
+
+- **CPU**: 4+ cores (8+ cores recommended for larger models)
+- **RAM**: Minimum 8GB (16GB+ recommended)
+- **Storage**: At least 10GB free space per model you plan to download
+- **Operating System**: macOS 12+ (this tutorial), Linux, or Windows with WSL2
+- **Network**: Initial model downloads require a good internet connection
+
 ## Why Podman?
 
 Podman is a daemonless container engine that's often allowed in corporate environments where Docker isn't. It's:
+
 - Compatible with Docker commands and images
 - Runs in userspace without requiring root privileges
 - Compliant with many corporate security policies
 - Officially supported by Red Hat and IBM (my employer)
 
 ## Understanding the Daemon Difference
+
 To understand why Podman is preferred in corporate environments, it's important to understand how it differs from Docker's architecture. Docker relies on a "root daemon" (dockerd), which is a persistent background process that:
 
 Runs continuously with root/administrative privileges
@@ -43,13 +55,16 @@ Think of it this way: Docker is like having a privileged butler (the daemon) who
 ### 1. Installing Ollama
 
 First, you'll need Ollama installed. On macOS, this is straightforward:
+
 1. Download from [ollama.ai](https://ollama.ai)
 2. Drag to Applications
 3. Run Ollama from Applications folder
 
 ### 2. Setting Up Podman
 
-Installing Podman on macOS using Homebrew:
+You can install Podman on macOS in two ways:
+
+#### Option A: Using Homebrew
 
 ```bash
 # Install Podman
@@ -59,6 +74,27 @@ brew install podman
 podman machine init
 podman machine start
 ```
+
+#### Option B: Direct Download
+
+1. Visit the [Podman website](https://podman.io/getting-started/installation)
+2. Download the macOS installer package
+3. Run the installer and follow the prompts
+4. Open Terminal and initialize Podman:
+
+   ```bash
+   podman machine init
+   podman machine start
+   ```
+
+#### Podman Desktop GUI
+
+For those who prefer a graphical interface, Podman Desktop provides an easy-to-use GUI:
+
+1. Download Podman Desktop from [podman-desktop.io](https://podman-desktop.io)
+2. Install and launch the application
+3. The GUI allows you to manage containers, images, and volumes without command-line use
+4. You can perform all the same operations mentioned in this tutorial through the interface
 
 ### 3. Installing OpenWebUI
 
@@ -82,9 +118,31 @@ podman run -d -p 3001:8080 --name open-webui -v open-webui:/app/backend/data ghc
 ### 4. Connecting to Ollama
 
 Once OpenWebUI is running:
+
 1. Open your browser to `http://localhost:3000` (or `3001` if you changed the port)
 2. Click on "Settings"
 3. Set the Ollama API endpoint to `http://localhost:11434`
+
+### 5. Installing Your First LLM Model
+
+Now that OpenWebUI is connected to Ollama, you'll need to download at least one model. Since I work at IBM, I recommend trying IBM's Granite models:
+
+```bash
+# Download the IBM Granite model (3B parameters, good for testing on limited hardware)
+ollama pull granite:3b
+
+# For more capability (7B parameter model, good balance of performance and resource use)
+ollama pull granite:7b
+
+# For even more advanced capabilities (13B parameter model, requires more RAM)
+ollama pull granite:13b
+```
+
+Alternatively, you can download models directly through the OpenWebUI interface:
+
+1. Navigate to the "Models" tab in OpenWebUI
+2. Search for "granite" or browse the available models
+3. Click "Download" on your chosen IBM Granite model
 
 ## Useful Podman Commands
 
@@ -112,14 +170,19 @@ podman logs open-webui
 Common issues and solutions:
 
 ### Port Conflicts
+
 If you see a 500 error or can't access the UI, check for port conflicts:
+
 ```bash
 lsof -i :3000
 ```
+
 Use a different port number if needed, as shown in the installation steps above.
 
 ### Podman Machine Issues
+
 If Podman isn't responding:
+
 ```bash
 # Check machine status
 podman machine list
@@ -130,7 +193,9 @@ podman machine start
 ```
 
 ### Volume Persistence
+
 If your settings aren't persisting between restarts, verify the volume mount:
+
 ```bash
 podman volume ls
 podman volume inspect open-webui
@@ -139,6 +204,7 @@ podman volume inspect open-webui
 ## Corporate Network Considerations
 
 When running on a corporate network:
+
 - Ensure you're not blocked by corporate firewalls
 - Consider using VPN if accessing from outside the office
 - Check with IT policies regarding local AI model usage
@@ -147,6 +213,7 @@ When running on a corporate network:
 ## Benefits Over Docker Setup
 
 Using Podman in a corporate environment offers several advantages:
+
 - No root daemon running in the background
 - Better security isolation
 - Compatibility with corporate security policies
