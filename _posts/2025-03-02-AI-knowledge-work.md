@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Navigating the AI Wave: Career Choices and the Future of Knowledge Work"
-date: 2023-10-15 0:00:00 -0500
+date: 2025-03-02 0:00:00 -0500
 categories: AI
 comments: true
 ---
