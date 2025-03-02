@@ -3,6 +3,7 @@ layout: post
 title: "Enhancing My Blog's Homepage with Claude: A Journey in Layout Design"
 date: 2025-02-23
 categories: [Technology, Tutorial]
+comments: true
 ---
 
 Today I completely revamped my blog's homepage with help from [Claude](https://claude.ai) (Anthropic's AI assistant). While my previous layout was functional, it had become increasingly cluttered as I added more posts. I needed a solution that would make navigation easier while maintaining the clean, professional look of my Jekyll-based site.
