@@ -8,8 +8,6 @@ comments: true
 
 ---
 
-## Building a Recipe Creator with BeeAI Framework: A Comprehensive Tutorial
-
 In this tutorial, we'll build a practical multi-agent system using the <a href="https://github.com/i-am-bee" target="_blank" rel="noopener noreferrer">BeeAI framework</a>  that can create recipes based on user-provided ingredients. Our Recipe Creator will demonstrate how specialized agents can work together to accomplish a complex task.
 
 ## What We'll Build
