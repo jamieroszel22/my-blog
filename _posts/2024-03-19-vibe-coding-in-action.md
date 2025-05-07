@@ -2,7 +2,7 @@
 layout: post
 title: "Vibe Coding in Action: Creating Vibe Write"
 date: 2025-05-07
-categories: Development
+categories: AI
 comments: true
 ---
 
