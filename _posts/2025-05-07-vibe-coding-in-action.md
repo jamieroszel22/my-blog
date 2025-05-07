@@ -4,6 +4,7 @@ title: "Vibe Coding in Action: Creating Vibe Write"
 date: 2025-05-07
 categories: AI
 comments: true
+
 ---
 
 As an IBM Redbooks project leader, I'm always looking for ways to improve my development workflow. Recently, I discovered the concept of "vibe coding" through Y Combinator's Startup School video titled **[How To Get The Most Out Of Vibe Coding | Startup School](https://youtu.be/BJjsfNO5JTo?si=-GRCNFJUJ-Q6thmZ)** featuring Tom Blomfield. The video showcases how Tom spent a month building side projects with tools like Claude Code, Windsurf, and Aqua, demonstrating how modern LLMs can serve as legitimate collaborators in the development process—from writing full-stack apps to debugging with a simple error message paste.
@@ -21,6 +22,7 @@ Vibe coding combines thoughtful planning with LLM assistance to create a more fl
 I started by carefully planning out what I wanted to build: a modern, intuitive markdown authoring application with live preview capabilities and LLM-powered drafting. Following the vibe coding methodology, I created a detailed plan in markdown before writing any code.
 
 The core features I implemented included:
+
 - A clean, modern markdown editor with live preview using Marked.js
 - Integration with local LLMs via Ollama for AI-powered drafting
 - A model selection dropdown for easy switching between different AI models
@@ -78,6 +80,7 @@ Status messages and robust error handling, especially for the LLM integration, p
 Vibe Write now exists as both a web application and a desktop application with solid foundations for future expansion. The development process was notably more enjoyable and efficient thanks to the vibe coding approach.
 
 Future plans include:
+
 - File system integration for saving and loading documents
 - System tray integration for quick access
 - Auto-updates functionality
