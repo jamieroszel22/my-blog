@@ -6,8 +6,6 @@ categories: Development
 comments: true
 ---
 
-# Vibe Coding in Action: Creating Vibe Write
-
 As an IBM Redbooks project leader, I'm always looking for ways to improve my development workflow. Recently, I discovered the concept of "vibe coding" through Y Combinator's Startup School video titled **[How To Get The Most Out Of Vibe Coding | Startup School](https://youtu.be/BJjsfNO5JTo?si=-GRCNFJUJ-Q6thmZ)** featuring Tom Blomfield. The video showcases how Tom spent a month building side projects with tools like Claude Code, Windsurf, and Aqua, demonstrating how modern LLMs can serve as legitimate collaborators in the development process—from writing full-stack apps to debugging with a simple error message paste.
 
 Inspired by this comprehensive playbook for building faster with AI assistance, I decided to put these vibe coding principles into practice by creating a markdown authoring app, and the results exceeded my expectations.
@@ -65,6 +63,7 @@ Git became an indispensable tool throughout the development process. Having the 
 ### 4. User Experience Focus
 
 Following the vibe coding emphasis on intuitive interfaces, I implemented several UX improvements:
+
 - The formatting toolbar intelligently handles selection (including trimming spaces) for a more intuitive experience
 - LLM controls are always visible without requiring scrolling
 - The interface adapts responsively to different window sizes
@@ -92,4 +91,4 @@ If you're looking to enhance your development process, I highly recommend giving
 
 ---
 
-*This post was written with ❤️ and Vibe Write.* 
+*This post was written with ❤️ and Vibe Write.*
