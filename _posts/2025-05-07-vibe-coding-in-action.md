@@ -8,7 +8,7 @@ comments: true
 
 ---
 
-As an IBM Redbooks project leader, I'm always looking for ways to improve my development workflow. Recently, I discovered the concept of "vibe coding" through Y Combinator's Startup School video titled **[How To Get The Most Out Of Vibe Coding | Startup School](https://youtu.be/BJjsfNO5JTo?si=-GRCNFJUJ-Q6thmZ)** featuring Tom Blomfield. The video showcases how Tom spent a month building side projects with tools like Claude Code, Windsurf, and Aqua, demonstrating how modern LLMs can serve as legitimate collaborators in the development process—from writing full-stack apps to debugging with a simple error message paste.
+As a project leader, I'm always looking for ways to improve my development workflow. Recently, I discovered the concept of "vibe coding" through Y Combinator's Startup School video titled <a href="https://youtu.be/BJjsfNO5JTo?si=-GRCNFJUJ-Q6thmZ" target="_blank" rel="noopener noreferrer">How To Get The Most Out Of Vibe Coding | Startup School</a> featuring Tom Blomfield. The video showcases how Tom spent a month building side projects with tools like Claude Code, Windsurf, and Aqua, demonstrating how modern LLMs can serve as legitimate collaborators in the development process—from writing full-stack apps to debugging with a simple error message paste.
 
 Inspired by this comprehensive playbook for building faster with AI assistance, I decided to put these vibe coding principles into practice by creating a markdown authoring app, and the results exceeded my expectations.
 
