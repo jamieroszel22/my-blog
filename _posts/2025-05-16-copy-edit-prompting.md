@@ -8,8 +8,6 @@ comments: true
 
 ---
 
-Taming the AI Editor: A Journey to a Killer Copilot Workflow
-
 We've all heard the buzz: AI is set to revolutionize content creation and editing. But how do you move from a general-purpose AI tool to a finely-tuned assistant that understands your specific, demanding editorial guidelines? And more importantly, how do you keep the human editor firmly in control, enhancing their capabilities rather than just hoping for the best from a black box?
 
 As a project leader for IBM Redbooks, I'm always looking for ways to improve our processes for these dense, highly technical publications. Recently, I embarked on a fascinating journey with an AI assistant to see if we could streamline our rigorous copy-editing process. It wasn't a straight path, but the iterative process of prompt design and workflow refinement has led to some powerful insights – and a workflow that genuinely feels like a human-AI collaboration.
