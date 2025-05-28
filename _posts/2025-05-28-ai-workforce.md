@@ -10,7 +10,10 @@ comments: true
 
 The buzz around AI's capabilities is everywhere—from generating code to creating presentations, AI tools are transforming how we work. But recently, while listening to <a href="https://youtu.be/Blq_pf6yd6U?si=LTyXgn6VUwPZetTf&t=538" target="_blank" rel="noopener noreferrer">IBM's "Mixture of Experts" podcast</a>, I heard something that made me pause and consider the deeper implications of this technological shift.
 
-Around the 9-minute mark, Shobhit Varshney, VP & Senior Partner and Head of Data & AI for Americas Consulting at IBM, shared a candid observation that cuts to the heart of AI's workforce impact: "When I start hiring people, interns for the summer, it's very difficult for me to figure out what work am I going to give them. It doesn't matter which Ivy League you went to—I'm going to define what my work is supposed to be, and I'm going to give you some instructions, I'm going to validate what you do. I might as well just have these models do it for me now."
+Around the 9-minute mark, Shobhit Varshney, VP & Senior Partner and Head of Data & AI for Americas Consulting at IBM, shared a candid observation that cuts to the heart of AI's workforce impact:
+
+*"When I start hiring people, interns for the summer, it's very difficult for me to figure out what work am I going to give them. It doesn't matter which Ivy League you went to—I'm going to define what my work is supposed to be, and I'm going to give you some instructions, I'm going to validate what you do. I might as well just have these models do it for me now."*
+
 This wasn't said with malice or dismissiveness—it was a moment of honest reflection from someone deeply embedded in the field. But it reveals what many of us are quietly observing: AI isn't just changing how we work; it's fundamentally altering the entry points into professional careers.
 
 ## The Quiet Revolution in Traditional Work Hierarchies
