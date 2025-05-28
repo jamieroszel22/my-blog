@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: "Taming the AI Editor: A Journey to a Killer Copilot Workflow"
-date: 2025-05-16
+title: "The New Entry Point: How AI Is Reshaping the Future of Work and Talent Development"
+date: 2025-05-28
 categories: [AI]
 comments: true
 
