@@ -12,6 +12,8 @@ comments: true
 
 As a project leader for IBM Redbooks, I spend countless hours reviewing and editing technical content to meet IBM's writing standards. I've always wished for a tool that could automatically apply our style guidelines—active voice, contractions, removing first-person pronouns, and more.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PDHeJe2-YFU" title="Building a Watsonx Copy Editor with Streamlit - Live Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Recently, I decided to build exactly that tool using IBM's watsonx.ai platform. Here's the surprising part: I'm not a full-stack developer, I'd never used watsonx.ai before, and honestly, I had no real idea what I was doing as an AI developer or cloud architect. But with Cursor as my coding companion, I was able to build a professional copy editing tool in just a few hours.
 
 The results exceeded my expectations. Not only does the tool solve a real problem I face daily, but the process taught me how approachable AI development has become. I'm excited to share this tutorial and continue iterating on the tool.
