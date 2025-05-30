@@ -1,14 +1,12 @@
 ---
 
 layout: post
-title: "Complete Tutorial: Building a Watsonx Copy Editor with Streamlit"
+title: "How I built an AI-powered tool using Cursor and watsonx.ai (without being a full-stack developer)"
 date: 2025-05-30
 categories: [AI, Tutorial]
 comments: true
 
 ---
-
-## How I built my first AI-powered tool using Cursor and watsonx.ai (without being a full-stack developer)
 
 As a project leader for IBM Redbooks, I spend countless hours reviewing and editing technical content to meet IBM's writing standards. I've always wished for a tool that could automatically apply our style guidelines—active voice, contractions, removing first-person pronouns, and more.
 
