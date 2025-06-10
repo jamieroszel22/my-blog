@@ -17,15 +17,6 @@ layout: default
     </p>
   </header>
 
-  {%- if page.hero_image -%}
-  <div class="post-hero-image">
-    <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | default: page.title }}" class="hero-image">
-    {%- if page.hero_caption -%}
-      <p class="hero-caption">{{ page.hero_caption }}</p>
-    {%- endif -%}
-  </div>
-  {%- endif -%}
-
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>

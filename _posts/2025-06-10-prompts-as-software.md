@@ -1,13 +1,14 @@
 ---
+
 layout: post
 title: "Building AI Prompts Like Software: A New Frontier in Enterprise Development"
 date: 2025-06-10
 categories: [AI]
 comments: true
-hero_image: assets\images\posts\prompt_as_software\prompt_ai_hero.png
-hero_alt: "AI prompt development workflow diagram showing the SDLC process"
-hero_caption: "Transforming AI prompt development from art to engineering with systematic SDLC methodology"
+
 ---
+
+![AI Prompt Development Workflow](/assets/images/posts/prompt_as_software/prompt_ai_hero.png)
 
 It began with a simple observation from a colleague: "The Copy Editor gives me different results every time I run the same content through it."
 This wasn't just a minor annoyance. In one test, the same 287-word document produced three different outcomes across three sessions:
