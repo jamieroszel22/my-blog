@@ -60,8 +60,6 @@ But the real innovation was in how we approached **testing**.
 
 ## The AI-Native Testing Revolution
 
-![AI Prompt Development Workflow](/assets/images/posts/prompt_as_software/test_lib.png)
-
 Traditional software testing doesn't work for AI prompts. You can't unit test a conversation. Instead, I created a **four-prompt testing ecosystem**:
 
 ### 1. Test Content Generator Prompt
@@ -144,8 +142,6 @@ Watching our Test Content Generator create realistic scenarios, then our Test Ev
 
 ### 4. **It Scales Exponentially**
 
-![AI Prompt Development Workflow](/assets/images/posts/prompt_as_software/prod_prompts.png)
-
 Our framework now works for **any prompt type**:
 
 - Copy editing (grammar, style)
@@ -187,8 +183,6 @@ When you have **reliable processes**, you can **take bigger risks**. Our systema
 ## What's Next
 
 ### Immediate Expansion
-
-![AI Prompt Development Workflow](/assets/images/posts/prompt_as_software/dev_proj.png)
 
 We're applying this framework to develop:
 
