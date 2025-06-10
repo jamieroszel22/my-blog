@@ -2,7 +2,7 @@
 
 layout: post
 title: "Building AI Prompts Like Software: A New Frontier in Enterprise Development"
-date: 2026-06-10
+date: 2025-06-10
 categories: [AI]
 comments: true
 
