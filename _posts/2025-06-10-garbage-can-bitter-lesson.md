@@ -10,9 +10,8 @@ comments: true
 
 ![AI Prompt Development Workflow](/assets/images/posts/garbage_can/garbage_can_hero.png)
 
-## Introduction: The Meeting That Changed Everything
+## The Meeting
 
-**[Light Draft]**
 I was in an online meeting with a high-stakes client when everything clicked. I had spent weeks preparing an outline for a complex Redbook, but the client's feedback was significant enough to require a significant restructure. In the old world, this would have meant days or weeks of rework and likely a follow-up meeting. Instead, I fed the feedback into my AI system and completely reworked the outline in real-time. The client was impressed. I was relieved. But more importantly, I realized we had crossed a threshold where *late* had become the same as *not at all*.
 
 That moment crystallized something I'd been wrestling with for months: my team wasn't just experimenting with AI tools anymore. We were rebuilding the entire knowledge architecture of technical publishing.
@@ -83,15 +82,13 @@ We kept running into the same pattern: individual team members would solve speci
 
 But individual solutions, no matter how brilliant, often created more problems than they solved at team scale. Different approaches to the same problems led to inconsistent outputs. Undocumented prompting strategies became tribal knowledge that didn't transfer. Personal AI setups that worked perfectly for one person failed for others with different technical environments or working styles. Solving the same problem 15 different ways equals not solving it at all.
 
-## Section 5: Velocity vs. Speed - Building Trust While Moving Fast
-
 ### Speed + Direction = Velocity
 
 Early in our AI adoption, we got caught up in the raw speed gains. AI could generate first drafts in minutes instead of days. It could restructure content instantly. It could adapt tone and complexity on demand. But speed without direction is just motion, and motion without purpose doesn't create value.
 
 We learned to think about velocity instead: speed plus direction. This meant building quality gates that didn't become bottlenecks, integrating UX research as part of the process rather than a stopping point, and always ensuring that faster meant better for our end users, not just more convenient for us.
 
-## Section 6: What We're Learning - The Bitter Lesson for Knowledge Work
+## What We're Learning - The Bitter Lesson for Knowledge Work
 
 ### Which Approach Is Winning?
 
