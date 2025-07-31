@@ -8,7 +8,7 @@ comments: true
 
 ---
 
-![AI Prompt Development Workflow](/assets/images/posts/garbage_can/garbage_can_hero.png)
+![garbage can versus bitter lesson](/assets/images/posts/garbage_can/garbage_can_hero.png)
 
 ## The Meeting
 
