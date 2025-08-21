@@ -8,8 +8,6 @@ comments: true
 
 ---
 
-![the Dolomites](/assets/images/posts/vacation_planning/dolomites.jpg)
-
 *I spend my days thinking about content creation, knowledge management, and process optimization. When it came to planning family vacations, I discovered that Claude Projects has revolutionized how I approach travel planning—turning what used to be a stressful, scattered process into an organized, learning system that gets better with every trip.*
 
 ## The Problem: Traditional Travel Planning is Broken
@@ -91,8 +89,6 @@ When my in-laws expressed interest in joining our August 2025 Italy trip, I face
 **Traditional planning would have been a nightmare:** Scouring dozens of websites for senior-accessible hotels and trying to figure out which cable cars have elevators.
 
 **With Claude Projects, it became manageable:**
-
-![Walther Square](/assets/images/posts/vacation_planning/walther_square.jpg)
 
 Claude analyzed our multi-generational needs and identified Hotel Greif in Bolzano as the perfect base. Why? It's located right on Walther Square in the historic center—walkable for seniors, safe for kids to explore, and positioned perfectly for my cycling departures. The AI understood that a central location would eliminate transportation stress for grandparents while maximizing authentic experiences for our family.
 
