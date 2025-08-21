@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "How I Use Claude Projects to Plan Family Vacations: A Guide to AI-Powered Travel Planning
+title: "How I Use Claude Projects to Plan Family Vacations: A Guide to AI-Powered Travel Planning"
 date: 2025-08-21
 categories: [AI]
 comments: true
