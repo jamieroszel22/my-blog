@@ -8,7 +8,7 @@ comments: true
 
 ---
 
-![the Dolomites](/assets/images/posts/ambiguity/reflection.png)
+![A robot looks at its human reflection](/assets/images/posts/ambiguity/reflection.png)
 
 Have you ever found yourself in a meeting, confidently explaining something you're only half-sure about? A groundbreaking new paper from [OpenAI and Georgia Tech](https://openai.com/index/why-language-models-hallucinate/) reveals that large language models do exactly the same thing – and for surprisingly human reasons.
 
