@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Why AI Would Rather Bluff Than Say "I Don't Know" – And What That Teaches Us About Ourselves"
+title: "Why AI Would Rather Bluff Than Say I Don't Know And What That Teaches Us About Ourselves"
 date: 2025-09-10
 categories: [AI]
 comments: true
