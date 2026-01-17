@@ -1,0 +1,50 @@
+// Post list styles (from all-posts.md inline styles)
+.all-posts {
+  margin: 2rem 0;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.post-item {
+  margin: 1.5rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e8e8e8;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.post-title a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: #2a7ae2;
+  }
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.post-categories a {
+  color: #2a7ae2;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.post-excerpt {
+  margin-top: 0.5rem;
+}

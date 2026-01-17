@@ -2,80 +2,11 @@
 ---
 
 @import "minima";
-
-// Your custom styles here
-$brand-color: #2a7ae2;
-$background-color: #fdfdfd;
-$text-color: #111111;
-$grey-color: #828282;
-
-// Custom Footer Styles
-.footer-col-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -15px;
-}
-
-.footer-col {
-  margin-bottom: 15px;
-  padding-left: 15px;
-}
-
-.footer-col-1,
-.footer-col-2,
-.footer-col-3 {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: 33%;
-  }
-  
-  .footer-col-3 {
-    width: 34%;
-  }
-}
-
-.footer-links {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.footer-links li {
-  margin-bottom: 5px;
-}
-
-.footer-links a {
-  color: #828282;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  color: #2a7ae2;
-  text-decoration: underline;
-}
-
-.site-footer h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-}
-
-.social-media-list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.social-media-list .svg-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 5px;
-}
+@import "variables";
+@import "mixins";
+@import "base";
+@import "header";
+@import "footer";
+@import "categories";
+@import "posts";
+@import "layout";
