@@ -1,0 +1,87 @@
+// Final polish and refinements
+
+// Improved link underlines
+a:not(.category-button):not(.footer-nav-button):not(.site-title):not(.header-nav-link):not(.post-link) {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+// Smooth transitions for all interactive elements
+button, a, input, textarea {
+  transition: all $transition-fast;
+}
+
+// Better button cursor
+button, .category-button, .footer-nav-button {
+  cursor: pointer;
+}
+
+// Responsive improvements
+@media screen and (max-width: 768px) {
+  .site-header .wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-nav-link {
+    padding: $space-xs $space-md;
+    font-size: 0.9rem;
+  }
+
+  .category-buttons {
+    gap: $space-sm;
+  }
+
+  .category-button {
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: $space-xl;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.25rem; }
+}
+
+// Print styles
+@media print {
+  .site-header,
+  .site-footer,
+  .category-buttons,
+  .footer-nav-button {
+    display: none;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .post-item,
+  .post-list > li {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+  }
+}
+
+// Reduced motion for accessibility
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Dark mode preparation (for future implementation)
+@media (prefers-color-scheme: dark) {
+  // Placeholder for dark mode styles
+  // Can be implemented in future enhancement
+}
