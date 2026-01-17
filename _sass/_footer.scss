@@ -1,7 +1,9 @@
-// Footer styles - modernized with new variables
+// Footer styles - modernized with subtle background
 .site-footer {
+  background: $background-subtle;
   border-top: 1px solid $border-color;
-  padding: $space-2xl 0;
+  padding: $space-3xl 0 $space-xl;
+  margin-top: $space-3xl;
 }
 
 .footer-content {
@@ -43,7 +45,7 @@
 }
 
 .footer-nav-button {
-  @include button-primary;
+  @include button-outline;
   display: inline-block;
   margin-right: $space-sm;
   margin-bottom: $space-sm;
