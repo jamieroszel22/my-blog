@@ -1,4 +1,4 @@
-// Category styles - modernized with new variables
+// Category styles - modern with gradients and animations
 .site-description {
   font-size: 1.1em;
   line-height: 1.6;
@@ -34,27 +34,33 @@
   min-width: 120px;
   display: inline-block;
   transition: all $transition-fast;
+  box-shadow: $shadow-sm;
 
   &:hover {
-    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
     text-decoration: none !important;
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 }
 
 .python {
-  background-color: $python-color !important;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
 }
 
 .ai {
-  background-color: $ai-color !important;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%) !important;
 }
 
 .technology {
-  background-color: $technology-color !important;
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%) !important;
 }
 
 .tutorial {
-  background-color: $tutorial-color !important;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
 }
 
 .post-categories {
@@ -68,12 +74,16 @@
   padding: $space-xs $space-sm;
   border-radius: $border-radius-sm;
   font-size: 0.85em;
+  font-weight: 500;
   margin-right: $space-sm;
   margin-bottom: $space-xs;
-  transition: background-color $transition-fast;
+  transition: all $transition-fast;
+  border: 1px solid transparent;
 
   &:hover {
     background-color: $gray-200;
+    border-color: $gray-300;
+    transform: translateY(-1px);
   }
 }
 
