@@ -1,19 +1,44 @@
-// Header styles - modernized with new variables
+// Header styles - modern sticky header with subtle shadow
 .site-header {
-  border-top: 5px solid $gray-700;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  padding: $space-lg 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   border-bottom: 1px solid $border-color;
-  min-height: 55.95px;
-  position: relative;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.header-nav-link {
-  float: right;
-  margin-top: $space-md;
-  color: $primary-color;
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $text-primary !important;
   text-decoration: none;
   transition: color $transition-fast;
 
   &:hover {
+    color: $primary-color !important;
+    text-decoration: none;
+  }
+}
+
+.header-nav-link {
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: 500;
+  padding: $space-sm $space-lg;
+  border-radius: $border-radius-md;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: $gray-100;
     color: $primary-dark;
   }
 }
