@@ -1,12 +1,19 @@
-// Header styles (from default.html inline styles)
+// Header styles - modernized with new variables
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
+  border-top: 5px solid $gray-700;
+  border-bottom: 1px solid $border-color;
   min-height: 55.95px;
   position: relative;
 }
 
 .header-nav-link {
   float: right;
-  margin-top: 15px;
+  margin-top: $space-md;
+  color: $primary-color;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $primary-dark;
+  }
 }

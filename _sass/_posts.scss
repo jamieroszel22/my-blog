@@ -1,18 +1,18 @@
-// Post list styles (from all-posts.md inline styles)
+// Post list styles - modernized with new variables
 .all-posts {
-  margin: 2rem 0;
+  margin: $space-xl 0;
 }
 
 .post-list {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0 0;
+  margin: $space-md 0 0 0;
 }
 
 .post-item {
-  margin: 1.5rem 0;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #e8e8e8;
+  margin: $space-lg 0;
+  padding: $space-sm 0;
+  border-bottom: 1px solid $border-color;
 
   &:last-child {
     border-bottom: none;
@@ -20,31 +20,35 @@
 }
 
 .post-title a {
-  color: #333;
+  color: $text-primary;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.2rem;
+  transition: color $transition-fast;
 
   &:hover {
-    color: #2a7ae2;
+    color: $primary-color;
   }
 }
 
 .post-meta {
   font-size: 0.9rem;
-  color: #666;
-  margin-top: 0.25rem;
+  color: $text-muted;
+  margin-top: $space-xs;
 }
 
 .post-categories a {
-  color: #2a7ae2;
+  color: $primary-color;
   text-decoration: none;
+  transition: color $transition-fast;
 
   &:hover {
+    color: $primary-dark;
     text-decoration: underline;
   }
 }
 
 .post-excerpt {
-  margin-top: 0.5rem;
+  margin-top: $space-sm;
+  color: $text-secondary;
 }

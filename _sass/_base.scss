@@ -1,4 +1,6 @@
 // Base styles
 body {
-  font-family: $font-family;
+  font-family: $font-primary;
+  color: $text-primary;
+  line-height: 1.6;
 }
