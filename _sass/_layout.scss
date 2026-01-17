@@ -1,2 +1,41 @@
-// Layout utilities
-// General layout styles will go here
+// Layout utilities and helper classes
+
+// Smooth scroll behavior
+html {
+  scroll-behavior: smooth;
+}
+
+// Selection styling
+::selection {
+  background: $primary-light;
+  color: white;
+}
+
+// Focus states for accessibility
+*:focus {
+  outline: 2px solid $primary-color;
+  outline-offset: 2px;
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid $primary-color;
+  outline-offset: 2px;
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.mt-0 { margin-top: 0; }
+.mt-sm { margin-top: $space-sm; }
+.mt-md { margin-top: $space-md; }
+.mt-lg { margin-top: $space-lg; }
+.mt-xl { margin-top: $space-xl; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-sm { margin-bottom: $space-sm; }
+.mb-md { margin-bottom: $space-md; }
+.mb-lg { margin-bottom: $space-lg; }
+.mb-xl { margin-bottom: $space-xl; }
