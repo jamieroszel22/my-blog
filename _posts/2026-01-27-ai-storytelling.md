@@ -8,7 +8,7 @@ comments: true
 
 ---
 
-## The Advice We've All Heard
+*The Advice We've All Heard*
 
 Work hard. Keep your head down. Let the work speak for itself.
 
