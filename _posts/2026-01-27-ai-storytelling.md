@@ -8,8 +8,6 @@ comments: true
 
 ---
 
-# The Story of Your Work: Why "Letting It Speak for Itself" No Longer Works
-
 ## The Advice We've All Heard
 
 Work hard. Keep your head down. Let the work speak for itself.
@@ -43,7 +41,6 @@ And for most of human history, we were the ones telling them.
 Something has shifted.
 
 In a recent episode of *[Decoder](https://www.theverge.com/podcast/866751/experian-ceo-alex-lintner-credit-scores-ai-privacy-interview)*, Nilay Patel interviewed Alex Lintner, CEO of Experian Software and Technology. Patel laid out what he called his "thesis for 2026":
-
 
 > "Maybe what we're all discovering is that all of our lives are captured in databases, that there are these huge stores of information held by various companies, held by various governments, held by various agencies inside the government. Maybe what AI is going to do is make those databases more legible. And maybe what it's also going to do is make the holders of those databases far more powerful, right? Because you suddenly have more access to the data, you can use it in different ways, you can connect all these databases in different ways."
 
