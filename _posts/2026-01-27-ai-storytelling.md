@@ -1,4 +1,10 @@
-I'll draft this for you. Let me write it out here first so you can review and provide feedback before we finalize it into a document.
+---
+
+layout: post
+title: "The Story of Your Work: Why 'Letting It Speak for Itself' No Longer Works"
+date: 2026-01-27
+categories: [AI]
+comments: true
 
 ---
 
