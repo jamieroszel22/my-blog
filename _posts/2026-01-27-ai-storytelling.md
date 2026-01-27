@@ -36,7 +36,7 @@ And for most of human history, we were the ones telling them.
 
 ## The New Storyteller
 
-![credit score](../assets/images/posts/ai_storytelling/credit_score.png)
+![the credit score](/assets/images/posts/ai_storytelling/credit_score.png)
 
 Something has shifted.
 
