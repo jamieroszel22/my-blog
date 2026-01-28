@@ -8,6 +8,9 @@ comments: true
 
 ---
 
+![the story of your work](/assets/images/posts/ai_storytelling/story_of_your_work.png)
+*Image generated using Gemini's Nano Banana Pro*
+
 *The Advice We've All Heard*
 
 Work hard. Keep your head down. Let the work speak for itself.
