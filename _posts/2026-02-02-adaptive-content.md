@@ -8,6 +8,7 @@ comments: true
 ---
 
 ![adaptive content](/assets/images/posts/adaptive_content/adaptive_content.png)
+*Image generated using Gemini's Nano Banana Pro*
 
 ## The Assumption We've Always Made
 
