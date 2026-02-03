@@ -290,4 +290,4 @@ If the answer to any of those is no, you're not building adaptive UX.
 
 You're building a more sophisticated gate.
 
-*A note on process: I developed this post in conversation with Claude, Anthropic's AI assistant. The ideas are mine, drawn from Harari's work, the Decoder interview, and Amanda Askell's thinking — but Claude helped me connect them, pressure-test the argument, and draft the prose. There's something fitting about using an AI tool to write about the importance of not letting AI tools author your narrative. I stayed in the driver's seat. This is me, speaking for my work.*
+*A note on process: I developed this post in conversation with Claude, Anthropic's AI assistant. The ideas are mine, but Claude helped me connect them, pressure-test the argument, and draft the prose. There's something fitting about using an AI tool to write about the importance of not letting AI tools author your narrative. I stayed in the driver's seat. This is me, speaking for my work.*
